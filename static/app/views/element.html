@@ -1,0 +1,21 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<polymer-element name="my-element" attributes="name">
+  <template>
+    <p id="saluation-field">{{greeting}}, {{name}}!</p>
+  </template>
+  <script>
+    Polymer('my-element', {
+      ready: function() {
+        this.name = '<insert name>';
+        this.greeting = 'Hello';
+      },
+      attached: function() {
+        this.fire('bind', {prop:'name'});
+      },
+      detached: function() {
+        this.fire('unbind', {prop:'name'});
+      }
+    });
+  </script>
+</polymer-element>

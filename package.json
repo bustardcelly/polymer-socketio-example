@@ -1,0 +1,20 @@
+{
+  "name": "polymer-socket.io-example",
+  "version": "0.1.0",
+  "description": "Example using of mixing polymer with socket.io communication for bound updates.",
+  "main": "index.js",
+  "scripts": {
+    "preserve": "cp node_modules/socket.io-client/dist/socket.io.min.js static/app/lib/socket.io.min.js",
+    "serve": "node index.js"
+  },
+  "authors": [
+    "Todd Anderson <bustardcelly@gmail.com>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "socket.io": "^0.9.16",
+    "socket.io-client": "^0.9.16",
+    "http": "0.0.0",
+    "connect": "^2.17.1"
+  }
+}
